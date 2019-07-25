@@ -6,106 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Testing!</title>
     <style>
-        div {
-            border-radius: 50%;
+        body {
+            margin: auto;
+            width: 50%;
+            background-color: #f3dfdfbd;
+            overflow: hidden;
+        }
+
+        .title-nav {
+            position: fixed;
+            width: 50%;
+        }
+
+        li {
+            background-color: white;
+            border: 3px solid #9e9e9e45;
             height: 70px;
-            width: 70px;
+        }
+
+        li div {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
             display: -webkit-inline-box;
             background-size: 150%;
-    background-repeat: no-repeat;
-    background-position: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-color: black;
+            border-style: solid;
+            margin: 8px;
         }
 
         h4 {
             display: inline;
-            padding: 5px;
             position: relative;
             bottom: 40px;
         }
 
-        ol {
+        ul {
             list-style-type: none;
+            padding: 10px;
+            height: -webkit-fill-available;
+            overflow-y: scroll;
+            padding: 0px;
         }
 
-        h6 {
+        h5 {
             position: relative;
-            bottom: 58px;
-            left: 80px;
+            bottom: 63px;
+            left: 76px;
+            color: gray;
         }
+
         h1 {
-            position: fixed;
-            display: block;
-            background-color: white;
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        input {
+            display: inline;
+            margin-left: 140px;
+            border-radius: 5px;
+            border-color: transparent;
+            position: absolute;
+            right: 5%;
+            bottom: 28px;
+        }
+
+        ::-webkit-scrollbar {
+            /* width: 0px; */
+            background: transparent;
         }
     </style>
 </head>
 
 <body>
-    <div>
-    <h1>Countries: 12</h1>
+    <div class="title-nav">
+        <h1>Countries: 12</h1>
+        <input type="search" placeholder="Search Country By Name">
     </div>
-    <ol>
+    <br>
+    <br>
+    <br>
+    <ul>
         <li>
             <div style="background-image: url(img/israel.png)"></div>
             <h4>Israel </h4>
-            <h6>Asia</h6>
+            <h5>Asia</h5>
         </li>
         <li>
-                <div style="background-image: url(img/Italy.png)"></div>
-                <h4>Italy</h4>
-            <h6>Erup</h6>
+            <div style="background-image: url(img/Italy.png)"></div>
+            <h4>Italy</h4>
+            <h5>Erup</h5>
         </li>
         <li>
-                <div style="background-image: url(img/germany.png)"></div>
+            <div style="background-image: url(img/germany.png)"></div>
             <h4>Germany</h4>
-            <h6>Erup</h6>
+            <h5>Erup</h5>
         </li>
         <li>
-                <div style="background-image: url(img/oganda.jpg)"></div>
+            <div style="background-image: url(img/oganda.jpg)"></div>
             <h4>Oganda</h4>
-            <h6>Afrika</h6>
+            <h5>Afrika</h5>
         </li>
         <li>
-                <div style="background-image: url(img/usa.png)"></div>
+            <div style="background-image: url(img/usa.png)"></div>
             <h4>USA</h4>
-            <h6>America</h6>
+            <h5>America</h5>
         </li>
         <li>
-                <div style="background-image: url(img/belgium.png)"></div>
+            <div style="background-image: url(img/belgium.png)"></div>
             <h4>Belgium</h4>
-            <h6>Erup</h6>
+            <h5>Erup</h5>
         </li>
         <li>
-                <div style="background-image: url(img/israel.png)"></div>
-                <h4>Israel </h4>
-                <h6>Asia</h6>
-            </li>
-            <li>
-                    <div style="background-image: url(img/Italy.png)"></div>
-                    <h4>Italy</h4>
-                <h6>Erup</h6>
-            </li>
-            <li>
-                    <div style="background-image: url(img/germany.png)"></div>
-                <h4>Germany</h4>
-                <h6>Erup</h6>
-            </li>
-            <li>
-                    <div style="background-image: url(img/oganda.jpg)"></div>
-                <h4>Oganda</h4>
-                <h6>Afrika</h6>
-            </li>
-            <li>
-                    <div style="background-image: url(img/usa.png)"></div>
-                <h4>USA</h4>
-                <h6>America</h6>
-            </li>
-            <li>
-                    <div style="background-image: url(img/belgium.png)"></div>
-                <h4>Belgium</h4>
-                <h6>Erup</h6>
-            </li>
-    </ol>
+            <div style="background-image: url(img/israel.png)"></div>
+            <h4>Israel </h4>
+            <h5>Asia</h5>
+        </li>
+        <li>
+            <div style="background-image: url(img/Italy.png)"></div>
+            <h4>Italy</h4>
+            <h5>Erup</h5>
+        </li>
+        <li>
+            <div style="background-image: url(img/germany.png)"></div>
+            <h4>Germany</h4>
+            <h5>Erup</h5>
+        </li>
+        <li>
+            <div style="background-image: url(img/oganda.jpg)"></div>
+            <h4>Oganda</h4>
+            <h5>Afrika</h5>
+        </li>
+        <li>
+            <div style="background-image: url(img/usa.png)"></div>
+            <h4>USA</h4>
+            <h5>America</h5>
+        </li>
+        <li>
+            <div style="background-image: url(img/belgium.png)"></div>
+            <h4>Belgium</h4>
+            <h5>Erup</h5>
+        </li>
+    </ul>
 </body>
 
 </html>
