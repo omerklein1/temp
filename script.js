@@ -10,7 +10,7 @@ function creatList() {
 <h5>${li.continent}</h5>
 </li>`;
         sumOfCountrys++;
-        document.querySelector('span').innerHTML = sumOfCountrys;
+        document.querySelector('span').innerHTML = `(${sumOfCountrys})`;
     });
 }
 
