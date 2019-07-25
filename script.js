@@ -1,8 +1,9 @@
 var myData = JSON.parse(data);
 let sumOfCountrys = 0;
 
-function creatList() {
-    myData.forEach( li => {
+function creatList(data) {
+    document.querySelector('ul').innerHTML = "";
+    data.forEach( li => {
         document.querySelector('ul').innerHTML +=
             ` <li>
 <div style="background-image: url(img/${li.abbreviation}.png)"></div>
@@ -14,4 +15,15 @@ function creatList() {
     });
 }
 
-window.onload = creatList;
+function search() {
+const text = document.querySelector('input').value;
+const newData = myData.filter( obj => obj.country.startsWith(capitalizeFirstLetter(text)));
+creatList(newData);
+}
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+
+window.onload = creatList(myData);
