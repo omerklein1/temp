@@ -1,7 +1,7 @@
 var myData = JSON.parse(data);
-let sumOfCountrys = 0;
 
 function creatList(data) {
+    let sumOfCountrys = 0;
     document.querySelector('ul').innerHTML = "";
     data.forEach( li => {
         document.querySelector('ul').innerHTML +=
