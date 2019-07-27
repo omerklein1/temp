@@ -3,6 +3,8 @@ body {
     width: 50%;
     background-color: #f3dfdfbd;
     overflow: hidden;
+    font-family: 'Acme', sans-serif;
+
 }
 
 .title-nav {
@@ -51,6 +53,7 @@ h5 {
     bottom: 63px;
     left: 76px;
     color: gray;
+    font-family: 'Indie Flower', cursive;
 }
 
 h1 {
